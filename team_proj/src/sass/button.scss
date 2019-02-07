@@ -1,0 +1,25 @@
+button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 6px;
+    font-family: 'Acrom';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    background: #ef7330;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.0065em;
+    color: white;
+}
+
+@media (min-width:768px) {
+
+   button {
+       padding: 14px 36px;
+       font-size: 14px;
+       line-height: 18px; 
+   }
+}

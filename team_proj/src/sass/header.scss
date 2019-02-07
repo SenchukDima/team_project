@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 79px;
+    font-family: 'Acrom';
+    @media (min-width: 320px) {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    @media (min-width:768px) {
+        justify-content: space-between;        
+    }
+       
+    &__logo {
+        @media (min-width: 320px) {
+            margin-bottom: 10px;
+        }
+        @media (min-width:768px) {
+            margin-bottom: 0;      
+        }
+        height: 44px;
+        width: 128px;
+    }
+
+    &__contacts {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 11px;
+        width: 230px;
+        letter-spacing: -0.02em;
+    }
+
+    &__numbers {
+        display: flex;
+        flex-wrap: wrap;
+        width: 120px;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 10px; 
+        line-height: 15px;
+    }
+
+    &__item::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/phone.svg);
+        height: 11px;
+        width: 8px; 
+        left: 0;
+    }
+        
+    &__email {
+        position: relative;
+        padding-left: 19px;
+        font-size: 12px;
+    }
+    &__email::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/mail.svg);
+        height: 11px;
+        width: 15px;
+        left: 0;
+    }
+
+    
+
+}
