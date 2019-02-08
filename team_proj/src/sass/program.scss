@@ -1,11 +1,26 @@
 .program {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    @media (min-width: 848px) {
-        align-items: flex-start;
-      }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  @media (min-width: 848px) {
+    align-items: flex-start;
+
+    &::before {
+      content: '';
+      display: block;
+      background: url(../images/progpamm.png);
+      background-repeat: no-repeat;
+      width: 132px;
+      height: 924px;
+      position: absolute;
+      top: -166px;
+      left: 718px;
+      opacity: 0.05;
+    }
+  }
 
   &__headline {
     width: 220px;
@@ -19,13 +34,13 @@
     color: #fff;
 
     @media (min-width: 848px) {
-        margin: 0 0 58px 0;
-        width: 400px;
-        font-family: 'Acrom', Arial, sans-serif;
-        font-weight: 800;
-        font-size: 36px;
-        line-height: 50px;
-      }
+      margin: 0 0 58px 0;
+      width: 574px;
+      font-family: 'Acrom', Arial, sans-serif;
+      font-weight: 800;
+      font-size: 58px;
+      line-height: 68px;
+    }
 
   }
 
@@ -37,8 +52,8 @@
     flex-wrap: wrap;
 
     @media (min-width: 848px) {
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
 
   &__block--text-box {
@@ -134,4 +149,4 @@
     font-size: 10.42px;
     line-height: 14px;
   }
-  }
+}
