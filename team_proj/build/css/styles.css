@@ -1124,7 +1124,8 @@ button {
 
   .request__img {
     width: auto;
-    margin-right: 80px;
+    margin: 0;
+    margin-right: 20px;
     margin-bottom: 0;
   }
 
@@ -1139,8 +1140,8 @@ button {
   }
 
   .request__box--list {
-    min-width: 440px;
-    max-width: 440px;
+    min-width: 420px;
+    max-width: 420px;
     margin: 0;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1201,6 +1202,10 @@ button {
     line-height: 50px;
   }
 
+  .request__img {
+    margin-right: 80px;
+  }
+
   .request__list--text-box {
     margin: 0 0 10px 13px;
     width: 130px;
@@ -1213,10 +1218,6 @@ button {
   .request__list--text-box:last-of-type {
     margin: 0 0 0 13px;
     width: 160px;
-  }
-
-  .request__box--list {
-    width: 440px;
   }
 
   .program {

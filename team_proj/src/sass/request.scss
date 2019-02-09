@@ -42,8 +42,13 @@
 
     @media (min-width: 768px) {
       width: auto;
-      margin-right: 80px;
+      margin: 0;
+      margin-right: 20px;
       margin-bottom: 0;
+    }
+
+    @media (min-width: 848px) {
+      margin-right: 80px;
     }
   }
 
@@ -144,16 +149,12 @@
     flex-direction: column;
 
     @media (min-width: 768px) {
-      min-width: 440px;
-      max-width: 440px;
+      min-width: 420px;
+      max-width: 420px;
       margin: 0;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-    }
-
-    @media (min-width: 848px) {
-      width: 440px;
     }
   }
 }
