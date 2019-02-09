@@ -1,14 +1,12 @@
 
 .project-manager {
 
-    // @media (min-width: 320px) {
-    //     margin-bottom: 20px;
-    // }
+    @media (min-width: 320px) {
+        margin-bottom: 45px;
+    }
 
-    @media (min-width: 768px) {
-        
-        // margin-bottom: 70px;
-        
+    @media (min-width: 768px) {   
+           
         &::before {
             content: '';
             display: block;
@@ -30,10 +28,10 @@
         letter-spacing: 0.005em;
         line-height: 1.2em;
         @media (min-width: 320px) {
-            font-size: 30px;
+            font-size: 40px;
             margin: 0 0 56px;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
             font-size: 57px;
         }
         
@@ -47,6 +45,9 @@
             width: 310px;
             font-size: 21px;
             padding-left: 103px;
+        }
+        @media (min-width: 320px) {
+            padding-left: 40px;
         }
     }
     &__paragraf1 {
@@ -102,7 +103,8 @@
                 margin: 0 0 56px;
             }
             @media (min-width: 768px) {
-                font-size: 57px;
+                margin: 0;
+                font-size: 37px;
             }
         }
             &__title::before {

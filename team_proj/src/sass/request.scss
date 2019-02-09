@@ -11,7 +11,7 @@
 
 
   &__block {
-    margin-bottom: 30px;
+    padding-bottom: 55px;
 
     @media (min-width: 848px) {
       margin-bottom: 130px;
@@ -19,7 +19,6 @@
   }
 
   &__headline {
-    margin: 0 auto;
     width: 280px;
     font-family: 'Acrom', Arial, sans-serif;
     font-weight: 800;
@@ -36,9 +35,13 @@
   }
 
   &__img {
+    width: 300px;
+    margin: 0 auto;
     margin-bottom: 16px;
 
-    @media (min-width: 848px) {
+
+    @media (min-width: 768px) {
+      width: auto;
       margin-right: 80px;
       margin-bottom: 0;
     }
@@ -48,9 +51,9 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    @media (min-width: 848px) {
+
+    @media (min-width: 768px) {
       flex-direction: row;
       align-items: flex-start;
     }
@@ -64,7 +67,7 @@
       list-style: none;
       width: 200px;
       padding-left: 20px;
-      margin: 0 0 14px 0;
+      margin: 0 0 26px 0;
 
       &:last-of-type {
         margin-bottom: 0;
@@ -93,7 +96,7 @@
       font-size: 14px;
       line-height: 20px;
 
-      @media (min-width: 848px) {
+      @media (min-width: 768px) {
         font-size: 16px;
         line-height: 26px;
       }
@@ -103,50 +106,54 @@
       text-align: center;
       position: absolute;
       left: -26px;
-      width: 40px;
-      height: 12px;
+      top: 24px;
+      width: 52px;
+      height: 16px;
+      font-size: 14px;
       font-family: 'Acrom', Arial, sans-serif;
       font-weight: bold;
-      font-size: 10px;
       background-color: #ef7330;
       color: #fff;
       transform: rotate(-90deg);
 
-      @media (min-width: 848px) {
-        top: 24px;
-        width: 52px;
-        height: 16px;
-        font-size: 14px;
-      }
+      
 
 
     }
 
     &--number-1::before {
       content: '[ 001 ]';
-      top: 40px;
     }
 
     &--number-2::before {
       content: '[ 002 ]';
-      top: 10px;
     }
 
     &--number-3::before {
       content: '[ 003 ]';
-      top: 10px;
     }
 
   }
 
-  @media (min-width: 848px) {
+  &__box--list {
+    margin: 0;
+    padding-left: 26px;
+    max-width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 
-    &__box--list {
-      padding: 0;
+    @media (min-width: 768px) {
+      min-width: 440px;
+      max-width: 440px;
       margin: 0;
-      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+
+    @media (min-width: 848px) {
+      width: 440px;
     }
   }
 }
