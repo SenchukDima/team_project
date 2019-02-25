@@ -23,6 +23,7 @@
     }
 
     &__contacts {
+        
         font-weight: bold;
         display: flex;
         align-items: center;
@@ -39,6 +40,8 @@
     }
 
     &__item {
+        text-decoration: none;
+        color: #000;
         position: relative;
         padding-left: 10px; 
         line-height: 15px;
@@ -54,6 +57,8 @@
     }
         
     &__email {
+        text-decoration: none;
+        color: #000;
         position: relative;
         padding-left: 19px;
     }

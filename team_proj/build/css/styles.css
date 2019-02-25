@@ -473,6 +473,8 @@ template {
 }
 
 .header__item {
+  text-decoration: none;
+  color: #000;
   position: relative;
   padding-left: 10px;
   line-height: 15px;
@@ -488,6 +490,8 @@ template {
 }
 
 .header__email {
+  text-decoration: none;
+  color: #000;
   position: relative;
   padding-left: 19px;
 }
@@ -810,9 +814,17 @@ template {
   line-height: 14px;
 }
 
+.conteiner {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.work {
+  padding-bottom: 50px;
+}
+
 .sub-title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   font-size: 20px;
   line-height: 28px;
   font-family: 'Acrom';
@@ -821,18 +833,19 @@ template {
   letter-spacing: 0.01em;
 }
 
-.par {
-  margin: auto;
-  text-align: center;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .steps {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 104px;
+  position: relative;
+}
+
+.par {
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .steps__block {
@@ -850,6 +863,21 @@ template {
 
 .steps__block:last-child {
   margin: 0;
+}
+
+.steps__block--arrow {
+  display: block;
+  width: 90px;
+  height: 12px;
+  position: relative;
+  top: 30px;
+}
+
+.arrow-1,
+.arrow-3,
+.arrow-4,
+.arrow-2 {
+  display: none;
 }
 
 .time {
@@ -879,37 +907,45 @@ template {
   align-content: center;
 }
 
+p {
+  margin: 0 0 24px;
+  font-size: 0;
+}
+
 .block__name--style {
+  display: inline;
+  align-items: space-between;
+  background: #000;
+  color: white;
   font-size: 13px;
   font-weight: 900;
-  margin-bottom: 24px;
   letter-spacing: -0.025em;
   line-height: 16px;
-  background: black;
-  color: #fff;
+  text-align: right;
 }
 
 .block__date {
   text-align: left;
   padding-left: 6px;
-  font-size: 13px;
   line-height: 16px;
 }
 
 .block__date--style-1 {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   font-weight: 900;
+  font-size: 13px;
 }
 
 .block__date--style-2 {
-  margin: 0;
   margin-bottom: 22px;
+  font-size: 13px;
 }
 
 .block__date--style-3,
 .block__date--style-4 {
   margin: 0;
   position: relative;
+  font-size: 13px;
 }
 
 .block__date--style-3::before {
@@ -932,7 +968,7 @@ template {
   margin-bottom: 20px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  color: #ef742f;
+  color: #ef7330;
 }
 
 .bonus::before {
@@ -963,6 +999,11 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.0065em;
   color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 14px 40px #d3d3d3;
 }
 
 @media (min-width: 320px) {
@@ -1148,6 +1189,10 @@ button {
     justify-content: space-between;
   }
 
+  .conteiner {
+    width: 850px;
+  }
+
   .sub-title {
     font-size: 36px;
     line-height: 50px;
@@ -1162,6 +1207,40 @@ button {
     transform: translateX(316px);
   }
 
+  .arrow-1,
+  .arrow-2,
+  .arrow-3,
+  .arrow-4 {
+    display: block;
+  }
+
+  .arrow-2 {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 130px;
+    left: 82%;
+    position: absolute;
+  }
+
+  .arrow-3 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .arrow-4 {
+    position: absolute;
+    width: 208px;
+    height: 86px;
+    left: 11%;
+    top: 64%;
+  }
+
+  .arrow-m {
+    display: none;
+  }
+
   .time {
     max-width: 416px;
     width: 100%;
@@ -1174,15 +1253,15 @@ button {
     transform: translateX(-40px);
   }
 
-  .bonus {
-    -webkit-transform: translateX(90px);
-    transform: translateX(90px);
-  }
-
   button {
     padding: 14px 36px;
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .bonus {
+    -webkit-transform: translateX(90px);
+    transform: translateX(90px);
   }
 }
 

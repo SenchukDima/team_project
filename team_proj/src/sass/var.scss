@@ -1,22 +1,19 @@
-
-
 .black {
-    background: #000;
-    color: #fff;
+  background: #000;
+  color: #fff;
 }
 .container {
-    @media (min-width: 320px) {
-        width: 95%;
-    }
+  @media (min-width: 320px) {
+    width: 95%;
+  }
 
+  @media (min-width: 1024px) {
+    width: 848px;
+  }
 
-    @media (min-width: 1024px) {
-        width: 848px;
-    }
-
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .work {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }

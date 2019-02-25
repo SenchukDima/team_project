@@ -1,12 +1,28 @@
+.conteiner {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.work {
+    padding-bottom: 50px;
+}
+
 .sub-title {
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
     font-size: 20px;
     line-height: 28px;
     font-family: 'Acrom';
     font-weight: 800;
     font-style: normal;
     letter-spacing: 0.01em;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 104px;
+    position: relative;
 }
 
 .par {
@@ -16,10 +32,228 @@
     line-height: 24px;
 }
 
+.steps__block {
+    display: flex;
+    max-width: 212px;
+    width: 100%;
+    min-height: 80px;
+    height: 100%;
+    border-left: 4px solid #f26228;
+    margin: 0 0 48px;
+    box-shadow: 0 0 30px #d3d3d3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.steps__block:last-child {
+    margin: 0;
+}
+
+.steps__block--arrow {
+    display: block;
+    width: 90px;
+    height: 12px;
+    position: relative;
+    top: 30px;
+}
+
+.arrow-1, .arrow-3, 
+.arrow-4, .arrow-2 {
+display: none;
+}
+
+.time {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 280px;
+    width: 100%;
+    max-height: 280px;
+    height: 100%;
+    padding: 34px 0;
+    margin-bottom: 64px;
+    font-family: 'Acrom';
+    font-weight: 900;
+    font-style: normal;
+    box-shadow: 0 0 40px #d3d3d3;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.block__name {
+    text-align: right;
+    align-content: center;
+}
+
+p {
+    margin: 0 0 24px;
+    font-size: 0;
+}
+
+.block__name--style {
+    display: inline;
+    align-items: space-between;
+    background: #000;
+    color:white;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    line-height: 16px;
+    text-align: right;
+}
+
+.block__date {
+    text-align: left;
+    padding-left: 6px;
+    line-height: 16px;
+}
+
+.block__date--style-1 {
+    margin-bottom: 42px;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.block__date--style-2 {
+    margin-bottom: 22px;
+    font-size: 13px;
+}
+
+.block__date--style-3,
+.block__date--style-4 {
+    margin: 0;
+    position: relative;
+    font-size: 13px;
+}
+
+.block__date--style-3::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;     
+    position: absolute;
+    background: black;
+    transform: rotate(-15deg);
+    background: #ef742f;
+}
+
+.bonus {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: #ef7330;
+}
+
+.bonus::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 34px; 
+    position: absolute;
+    left: -10px;
+    top: 4px;
+    background: black;
+    transform: rotate(30deg);
+}
+
+button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 6px;
+    font-family: 'Acrom';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    background: #ef7330;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.0065em;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 14px 40px #d3d3d3;
+}
+
 @media (min-width:768px) {
+
+    .conteiner {
+        width: 850px;
+    }
 
     .sub-title {
         font-size: 36px;
         line-height: 50px;
     }
+    
+    .steps {
+        justify-content: space-between;
+    }
+
+    .steps__block:last-child {
+        transform: translateX(316px);
+    }
+
+    .arrow-1, .arrow-2,
+    .arrow-3, .arrow-4 {
+    display: block;
+    }
+
+    .arrow-2 {
+        transform: rotate(-90deg);
+        transform: rotate(90deg);
+        top: 130px;
+        left: 82%;
+        position: absolute;
+    }
+    
+    .arrow-3 {
+        transform: rotate(180deg);
+    }
+    
+    .arrow-4 {
+        position: absolute;
+        width: 208px;
+        height: 86px;
+        left: 11%;
+        top: 64%;
+    }
+    
+    .arrow-m  {
+    display: none;
+    }
+   
+    .time {
+       max-width: 416px;
+       width: 100%;
+       min-height: 238px;
+       height: 100%;
+       
+   }
+
+   .info {
+    transform: translateX(-40px);
+    }
+
+   button {
+       padding: 14px 36px;
+       font-size: 14px;
+       line-height: 18px;
+    }
+
+   .bonus {
+    transform: translateX(90px);
+}
+
 }
